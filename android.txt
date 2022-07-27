@@ -65,6 +65,12 @@ brew install jadx
 
 pip3 install frida-tools
 pip3 install frida
+pip3 install --upgrade frida
+pip3 install --upgrade frida-tools
+pip3 install frida-dexdump
+frida-dexdump -U -f com.app.pkgname
+
+
 frida –version
 
 download frida-server-15.1.15-android-x86.xz https://github.com/frida/frida/releases
