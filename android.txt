@@ -150,3 +150,12 @@ longClickable="false"
 
 adb shell
 content query --uri content://com.example.insecurecontentprovider2.Notesprovider/notes
+
+
+https://github.com/sensepost/objection
+pip3 install -U objection
+
+objection -g package_name explore
+memory dump all file.txt
+strings file.txt
+
