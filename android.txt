@@ -1,5 +1,8 @@
 adb devices
 adb -s device-id shell
+pm list packages
+adb shell pm path com.android.messaging
+adb uninstall com.android.messaging
 
 sqllite3 filename
 
@@ -96,7 +99,6 @@ frida -l code.js -f com.example.frida1 -U
 
 
 adb shell
-settings
 settings put global http_proxy 192.168.1.100:8080
 settings get global http_proxy
 
@@ -149,7 +151,7 @@ longClickable="false"
 
 
 adb shell
-content query --uri content://com.example.insecurecontentprovider2.Notesprovider/notes
+    content query --uri content://com.example.insecurecontentprovider2.Notesprovider/notes
 
 
 https://github.com/sensepost/objection
@@ -159,3 +161,7 @@ objection -g package_name explore
 memory dump all file.txt
 strings file.txt
 
+
+
+
+android:allowBackup="true" -> android:allowBackup="false"
