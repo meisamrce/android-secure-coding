@@ -1,10 +1,3 @@
-/*
-Original author: Daniele Linguaglossa
-28/07/2021 -    Edited by Simone Quatrini
-                Code amended to correctly run on the latest frida version
-        		Added controls to exclude Magisk Manager
-*/
-
 Java.perform(function() {
     var RootPackages = ["com.noshufou.android.su", "com.noshufou.android.su.elite", "eu.chainfire.supersu",
         "com.koushikdutta.superuser", "com.thirdparty.superuser", "com.yellowes.su", "com.koushikdutta.rommanager",

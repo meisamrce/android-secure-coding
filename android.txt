@@ -3,6 +3,7 @@ adb -s device-id shell
 pm list packages
 adb shell pm path com.android.messaging
 adb uninstall com.android.messaging
+adb install chrome.apk
 
 sqllite3 filename
 
