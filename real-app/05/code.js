@@ -4,7 +4,7 @@ Java.perform(function () {
     var count = 0;
     setTimeout(function() {
         console.log('setTimeout is call');
-        Java.choose("ata.zeki.chat._01_start",{
+        Java.choose("ata.zeki.gilas._01_start",{
             onMatch:function(instance){
                 console.log(instance);
                 Java.scheduleOnMainThread(function () {
@@ -21,11 +21,6 @@ Java.perform(function () {
                         }
                     }    
                     
-                    instance.isRooted.overload().implementation = function()
-                    {
-                        console.log('isRooted!');
-                        return false;
-                    }
                 });
             },
             onComplete:function (){}
