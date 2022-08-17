@@ -166,3 +166,6 @@ strings file.txt
 
 
 android:allowBackup="true" -> android:allowBackup="false"
+
+
+https://www.buaq.net/go-18096.html
