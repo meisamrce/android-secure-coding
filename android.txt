@@ -10,7 +10,8 @@ sqllite3 filename
 adb shell am start -n com.example.intentinjection/.Dashboard -e username 'hacker'
 adb shell am broadcast -p com.example.insecurebroadcastreceiver -a theBroadcast -e mobile '000' -e password "123456"
 
-
+apktool d app.apk 
+apktool b --use-aapt2 appFolderName
 
 
 
@@ -98,7 +99,8 @@ for disable : settings put global http_proxy :0
 
 
 
-adb logcat "packages_name"
+adb logcat 
+adb logcat | grep pid 
 
 
 https://codeshare.frida.re/
@@ -107,11 +109,11 @@ https://codeshare.frida.re/@dzonerzy/fridantiroot/
 
 
 
-frida --codeshare dzonerzy/fridantiroot -f com.sadadpsp.eva -U
+frida --codeshare dzonerzy/fridantiroot -f com.app -U
 
 %resume
 
-frida -l file.js -f com.sadadpsp.eva -U
+frida -l file.js -f com.app -U
 
 
 
