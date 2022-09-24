@@ -5,6 +5,9 @@ adb shell pm path com.android.messaging
 adb uninstall com.android.messaging
 adb install chrome.apk
 
+pm list packages
+pm path package_name
+
 sqllite3 filename
 
 adb shell am start -n com.example.intentinjection/.Dashboard -e username 'hacker'
@@ -182,3 +185,20 @@ android:allowBackup="true" -> android:allowBackup="false"
 
 
 https://www.buaq.net/go-18096.html
+
+
+
+
+android-x86 :
+
+mount -o remount,rw /mnt
+vi /mnt/grub/menu.lst
+nomodeset xforcevesa
+:wq 
+reboot
+
+
+adb connect 172.16.246.141:5555
+scrcpy -s
+
+https://github.com/Genymobile/scrcpy
