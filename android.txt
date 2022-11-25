@@ -116,9 +116,10 @@ frida -l code.js -f com.example.frida1 -U
 
 adb shell
 settings put global http_proxy 192.168.1.100:8080
+settings put global http_proxy 172.16.246.1:8080
 settings get global http_proxy
 
-in android open : http://192.168.1.100:8080 -> download ca -> der ->  rename name.cer
+in android open : http://172.16.246.1:8080 -> download ca -> der ->  rename name.cer
 
 for disable : settings put global http_proxy :0
 
@@ -202,3 +203,7 @@ adb connect 172.16.246.141:5555
 scrcpy -s
 
 https://github.com/Genymobile/scrcpy
+
+
+adb shell settings put global verifier_verify_adb_installs 0
+

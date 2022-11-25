@@ -7,5 +7,22 @@ Java.perform(function () {
         console.log(value);
         return this.put(key,value);
     }
+    
+    setTimeout(function() {
+        console.log('setTimeout is call');
+        Java.choose("com.example.weakcryptography.MainActivity",{
+            onMatch:function(instance){
+                console.log(instance);
+                Java.scheduleOnMainThread(function () {
+                    instance.encrypt.overload("java.lang.String").implementation = function(str){
+                        console.log('encrypt method is call');
+                        console.log(str);
+                        return this.encrypt(str);
+                    }                
+                });
+            },
+            onComplete:function (){}
+        }); 
+    },5000);
 
 });
