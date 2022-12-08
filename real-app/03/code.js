@@ -8,11 +8,11 @@ Java.perform(function () {
         console.log(n);
         return false;
     }
-
+    
     var x0 = Java.use("da.x0");
     x0.V1.implementation = function () {
         console.log('V1');
         return false;
     }
-
+    
 });

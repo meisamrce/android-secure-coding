@@ -13,7 +13,4 @@ Java.perform(function () {
         return false;
     }
 
-
-    
-
 });
