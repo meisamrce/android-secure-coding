@@ -147,7 +147,9 @@ frida -l file.js -f com.app -U
 
 allow backup:
 
-adb backup -apk -shared package_name 
+adb backup -apk package_name 
+
+java -jar abe.jar unpack backup.ab backup.tar
 
 https://github.com/nelenkov/android-backup-extractor
 
@@ -199,7 +201,7 @@ nomodeset xforcevesa
 reboot
 
 
-adb connect 172.16.246.141:5555
+adb connect 172.16.246.146:5555
 scrcpy -s
 
 https://github.com/Genymobile/scrcpy
@@ -207,3 +209,6 @@ https://github.com/Genymobile/scrcpy
 
 adb shell settings put global verifier_verify_adb_installs 0
 
+
+
+https://github.com/wushenwu/frida_script_collections
