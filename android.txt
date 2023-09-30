@@ -17,7 +17,6 @@ apktool d app.apk
 apktool b --use-aapt2 appFolderName
 
 
-
 adb shell am start -n com.example.insecurewebview/.RegistrationWebView -e reg_url 'http://138.68.182.36:999/'
 
 
@@ -95,7 +94,7 @@ pip3 install frida-dexdump
 frida-dexdump -U -f com.app.pkgname
 
 
-frida –version
+frida --version
 
 download frida-server-15.1.15-android-x86.xz https://github.com/frida/frida/releases
 unzip 
@@ -117,6 +116,7 @@ frida -l code.js -f com.example.frida1 -U
 adb shell
 settings put global http_proxy 192.168.1.100:8080
 settings put global http_proxy 172.16.246.1:8080
+settings put global http_proxy 172.20.10.2:8080
 settings get global http_proxy
 
 in android open : http://172.16.246.1:8080 -> download ca -> der ->  rename name.cer
@@ -125,6 +125,7 @@ for disable : settings put global http_proxy :0
 
 
 
+https://github.com/httptoolkit/frida-android-unpinning/blob/main/frida-script.js
 
 adb logcat 
 adb logcat | grep pid 
@@ -212,3 +213,11 @@ adb shell settings put global verifier_verify_adb_installs 0
 
 
 https://github.com/wushenwu/frida_script_collections
+
+
+
+
+/Users/meisamrce/Library/Android/sdk/build-tools/33.0.1
+keytool -genkeypair -v -keystore key.keystore -alias key -keyalg RSA -keysize 2048 -validity 10000
+./zipalign -f -v 4 app-unsigned.apk app-signed.apk
+./apksigner sign --ks key.keystore --ks-key-alias key app-signed.apk
