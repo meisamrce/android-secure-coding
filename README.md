@@ -72,7 +72,7 @@ Broadcast
 
 آموزش نصب و راه اندازی Mobile Security Framework
 
-### فصل اول 
+### دانلود فصل اول 
 
 [01](https://cafenode.ir/Android_Applications_Pentesting/01/c01.mp4)
 
@@ -98,7 +98,7 @@ Broadcast
 
 ---
 
-### فصل دوم
+### دانلود فصل دوم
 
 [01](https://cafenode.ir/Android_Applications_Pentesting/02/c01.mp4)
 
@@ -138,7 +138,7 @@ Broadcast
 
 ---
 
-### فصل چهارم
+### دانلود فصل چهارم
 
 [01](https://cafenode.ir/Android_Applications_Pentesting/04/c01.mp4)
 
@@ -154,7 +154,7 @@ Broadcast
 
 ---
 
-### فصل پنجم
+### دانلود فصل پنجم
 
 [01](https://cafenode.ir/Android_Applications_Pentesting/05/c01.mp4)
 
@@ -166,7 +166,7 @@ Broadcast
 
 ---
 
-### فصل ششم
+### دانلود فصل ششم
 
 [01](https://cafenode.ir/Android_Applications_Pentesting/06/c01.mp4)
 
@@ -178,7 +178,7 @@ Broadcast
 
 ---
 
-### فصل هفتم
+### دانلود فصل هفتم
 
 [01](https://cafenode.ir/Android_Applications_Pentesting/07/c01.mp4)
 
