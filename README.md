@@ -3,6 +3,75 @@
 # آموزش دوره تست نفوذ Android ( رایگان )
 ##  مدرس :‌ میثم منصف [Linkedin](https://www.linkedin.com/in/meisam-monsef-8693b347/) - [Telegram ID](https://t.me/meisamrce/) - [Telegram Channel](https://t.me/seccode) - [Email](mailto:meisamrce@gmail.com)
 
+فصل اول :
+
+معرفی معماری اندروید
+
+معرفی تکنولوژی های ساخت نرم افزار های اندروید
+
+نصب و راه اندازی سیستم عامل اندروید Android-x86
+
+نصب و راه اندازی Genymotion
+
+نصب و راه اندازی Android Studio
+
+ساخت یک اپلیکشن اندروید
+
+تجزیه و تحلیل ساختار نرم افزارهای اندروید APK
+
+آموزش ADB
+
+نصب و راه اندازی نرم افزار Apktool
+
+مهندسی معکوس APK
+
+آموزش تغییر و دستکاری نرم افزار APK
+
+آموزش نحوه تغییر در کد های برنامه Smali Patching
+
+نحوه Build کردن APK و امضای دیجیتالی
+
+فصل دوم :
+‌
+بررسی allowBackup
+
+مفاهیم Intent و بررسی مشکلات امنیتی Intent
+
+مفاهیم Broadcast Receiver و بررسی مشکلات امنیتی 
+Broadcast
+
+مفاهیم Service و بررسی مشکلات امنیتی Service
+
+مفاهیم Provider و بررسی مشکلات امنیتی Provider
+
+مشکلات امنیتی در Log Cat
+
+مشکلات امنیتی در Hardcoded Credentials
+
+مفاهیم Shared Preferences و بررسی مشکلات امنیتی Shared Preferences
+
+مفاهیم Database و بررسی مشکلات امنیتی DataBaase
+
+مفاهیم Cryptography و مشکلات امنیتی Cryptography
+
+مفاهیم Webview و مشکلات امنیتی Webview
+
+فصل سوم :
+
+آموزش نصب و راه اندازی frida
+
+نحوه Hook کردن و نوشتن اسکریپت برای frida
+
+آموزش By Pass کردن مکانیزم های امنیتی Anti Root
+
+نحوه بدست آوردن ترافیک نرم افزار ها با Burp Suite
+
+آموزش By Pass کردن مکانیزم های امنیتی SSL Pinning
+
+معرفی NDK و ایجاد و تحلیل یک پروژه
+
+آموزش نصب و راه اندازی Mobile Security Framework
+
 ### فصل اول 
 
 [01](https://cafenode.ir/Android_Applications_Pentesting/01/c01.mp4)
