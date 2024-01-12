@@ -189,3 +189,13 @@ Broadcast
 [03](https://cafenode.ir/Android_Applications_Pentesting/07/c03.mp4)
 
 ---
+
+### دانلود فصل هشتم (قسمت پایانی)
+
+[01](https://cafenode.ir/Android_Applications_Pentesting/08/c01.mp4)
+
+[02](https://cafenode.ir/Android_Applications_Pentesting/08/c02.mp4)
+
+[03](https://cafenode.ir/Android_Applications_Pentesting/08/c03.mp4)
+
+---
