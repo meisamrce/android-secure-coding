@@ -115,7 +115,7 @@ frida -l code.js -f com.example.frida1 -U
 
 
 adb shell
-settings put global http_proxy 192.168.1.100:8080
+settings put global http_proxy 192.168.1.7:8080
 settings put global http_proxy 192.168.8.100:8080
 settings put global http_proxy 172.16.246.1:8080
 settings put global http_proxy 172.20.10.2:8080
